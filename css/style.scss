@@ -41,7 +41,7 @@ section {
   position: fixed;
   // background: url("./../Stuff/navback.png");
   background-color: black;
-  color: rgb(250, 28, 139);
+  color: rgb(255, 0, 221);
   padding-left: 100px;
   width: 100%;
   ul {
@@ -60,7 +60,7 @@ section {
       font-family: "Courgette", cursive;
 
       &:hover {
-        color: rgb(250, 28, 139);
+        color: rgb(255, 0, 221);
       }
     }
   }
@@ -121,8 +121,8 @@ section {
     background-color: white;
     width: 18%;
     height: 45%;
-    border-left: 2px rgb(255, 0, 221) solid;
-    border-top: 2px rgb(255, 0, 221) solid;
+    border-left: 5px rgb(255, 0, 221) solid;
+    border-top: 5px rgb(255, 0, 221) solid;
     border-right: 5px rgb(3, 238, 255) solid;
     border-bottom: 5px rgb(3, 238, 255) solid;
     border-radius: 15px;

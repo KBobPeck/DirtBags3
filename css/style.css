@@ -44,7 +44,7 @@ section {
   top: 0;
   position: fixed;
   background-color: black;
-  color: #fa1c8b;
+  color: #ff00dd;
   padding-left: 100px;
   width: 100%;
 }
@@ -78,7 +78,7 @@ section {
 }
 
 .nav li a:hover {
-  color: #fa1c8b;
+  color: #ff00dd;
 }
 
 .landing {
@@ -157,8 +157,8 @@ section {
   background-color: white;
   width: 18%;
   height: 45%;
-  border-left: 2px #ff00dd solid;
-  border-top: 2px #ff00dd solid;
+  border-left: 5px #ff00dd solid;
+  border-top: 5px #ff00dd solid;
   border-right: 5px #03eeff solid;
   border-bottom: 5px #03eeff solid;
   border-radius: 15px;
