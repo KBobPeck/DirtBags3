@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAIA,OAAO,CAAC,6DAAI,CACZ,OAAO,CAAC,oEAAI,CAEZ,OAAO,CAAC,sEAAI,CGLZ,AAAA,QAAQ,AAAA,CACN,MAAM,CAAE,KAAK,CACd,AHDD,iCAAiC",
+    "sources": [
+        "../../SASS/main.scss",
+        "../../SASS/_nav.scss",
+        "../../SASS/_vars.scss",
+        "../../SASS/_landing.scss",
+        "../../SASS/_vars.scss",
+        "../../SASS/_vars.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

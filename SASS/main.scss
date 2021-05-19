@@ -1,0 +1,36 @@
+@import "nav";
+@import "landing";
+@import "vars";
+
+/*! `Custom` Bootstrap 4 theme */
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,700);
+$font-family-base:Poppins;
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One:200,300,400,700);
+$headings-font-family:Fugaz One;
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/type";
+// @import "../node_modules/bootstrap/scss/images";
+// @import "../node_modules/bootstrap/scss/code";
+// @import "../node_modules/bootstrap/scss/grid";
+
+$enable-grid-classes:false;
+$primary:#12130F;
+$secondary:#6f7f8c;
+$success:#C60F7B;
+$danger:#C1CAD6;
+$info:#66C7F4;
+$warning:#F90093;
+$light:#eceeec;
+$dark:#1e2b37;
+$enable-gradients:true;
+$spacer:1rem;
+$border-width:1px;
+$btn-border-radius:1.35rem;
+
+
+
+// Add SASS theme customizations here..
