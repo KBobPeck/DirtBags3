@@ -1,0 +1,20 @@
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,700);
+$font-family-base: Poppins;
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One:200,300,400,700);
+$headings-font-family: Fugaz One;
+
+$theme1: #12130f;
+$theme2: #6f7f8c;
+
+$alt1: #66c7f4;
+
+$highlight1: #e90f8e;
+$highlight2: #f90093;
+
+$dark1: #1e2b37;
+
+$light1: #eceeec;
+$light2: #c1cad6;
+
+$shadow: 0.3rem 0.3rem 0.4rem $dark1, -0.2rem -0.2rem 0.3rem $light1;

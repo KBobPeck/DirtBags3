@@ -1,5 +1,15 @@
 @import "vars";
 
-.navbar{
-
+.navbar {
+  background: $theme1;
+  font-family: $headings-font-family;
+  a {
+    color: $highlight1;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  svg {
+    fill: $light1;
+    height: 3rem;
+  }
 }
