@@ -1,291 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
-    <title>d!RtBags HQ</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./css/min/main.min.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./Assets/favicon.png" alt="logo" height="50px" />
-        </a>
-        <div class="icons invisible-md">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="bi bi-twitch"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"
-            />
-            <path
-              d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"
-            />
-          </svg>
-          <svg viewBox="0 0 16 16">
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-            />
-          </svg>
-          <svg viewBox="0 0 16 16">
-            <path
-              d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"
-            />
-            <path
-              d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z"
-            />
-          </svg>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-        >
-          <svg viewBox="0 0 16 16">
-            <path
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="bi bi-twitch"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"
-              />
-              <path
-                d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"
-              />
-            </svg>
-            <svg viewBox="0 0 16 16">
-              <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-              />
-            </svg>
-            <svg viewBox="0 0 16 16">
-              <path
-                d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"
-              />
-              <path
-                d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z"
-              />
-            </svg>
-          </form>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+  <title>d!RtBags HQ</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/min/main.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Assets/favicon.png" alt="logo" height="50px" />
+      </a>
+      <div class="icons invisible-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitch" viewBox="0 0 16 16">
+          <path
+            d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+          <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+        </svg>
+        <svg viewBox="0 0 16 16">
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+        <svg viewBox="0 0 16 16">
+          <path
+            d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+          <path
+            d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+        </svg>
       </div>
-    </nav>
-
-    <div class="container landing-page">
-      <div class="row landing m">
-        <div class="col-12 col-lg-6 col-xlg-3">
-          <img src="./Assets/whiteLogo.png" alt="logo" class="center-block" />
-        </div>
-
-        <div class="text col-12 col-lg-6 col-xlg-7">
-          <h2>A GROUP OF PEOPLE DOIN' STUFF</h2>
-          <p>Smaller text for something else</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="about container">
-      <article class="postcard blue">
-        <a class="postcard__img_link" href="#">
-          <img
-            class="postcard__img"
-            src="https://static.wixstatic.com/media/df6e57_d537626eb9ef4a6b9b9748ad3a203842~mv2.png/v1/fit/w_2500,h_1330,al_c/df6e57_d537626eb9ef4a6b9b9748ad3a203842~mv2.png"
-            alt="Image Title"
-          />
-        </a>
-        <div class="postcard__text">
-          <h1 class="postcard__title blue">
-            <a href="#">Helping Hands</a>
-          </h1>
-          <div class="postcard__subtitle small">
-            <time datetime="2020-05-25 12:00:00">
-              <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
-            </time>
-          </div>
-          <div class="postcard__bar"></div>
-          <div class="postcard__preview-txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            fugiat asperiores inventore beatae accusamus odit minima enim,
-            commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
-            corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
-            adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
-            nobis enim quidem excepturi, illum quos!
-          </div>
-          <ul class="postcard__tagbox">
-            <li class="tag__item"><i class="fas fa-tag mr-2"></i> Charity</li>
-            <li class="tag__item">
-              <i class="fas fa-clock mr-2"></i> 2 Weeks Left
-            </li>
-            <li class="tag__item play blue">
-              <a href="#"><i class="fas fa-play mr-2"></i> Visit Site</a>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="postcard red">
-        <a class="postcard__img_link" href="#">
-          <img
-            class="postcard__img"
-            src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1172A54MPA3563PT17X21Y43D1012856824FS2800/views/1,width=378,height=378,appearanceId=54,backgroundColor=F2F2F2,modelId=2672,crop=list/you-cant-scare-me-crazy-new-jersey-girl-halloween-womens-vintage-sport-t-shirt.jpg"
-            alt="Image Title"
-          />
-        </a>
-        <div class="postcard__text">
-          <h1 class="postcard__title red">
-            <a href="#">New Merch Dropped</a>
-          </h1>
-          <div class="postcard__subtitle small">
-            <time datetime="2020-05-25 12:00:00">
-              <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
-            </time>
-          </div>
-          <div class="postcard__bar"></div>
-          <div class="postcard__preview-txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            fugiat asperiores inventore beatae accusamus odit minima enim,
-            commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
-            corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
-            adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
-            nobis enim quidem excepturi, illum quos!
-          </div>
-          <ul class="postcard__tagbox">
-            <li class="tag__item"><i class="fas fa-tag mr-2"></i> Merch</li>
-            <!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i> </li> -->
-            <li class="tag__item play red">
-              <a href="#"><i class="fas fa-play mr-2"></i> Shop Now</a>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="postcard yellow">
-        <a class="postcard__img_link" href="#">
-          <img
-            class="postcard__img"
-            src="https://pbs.twimg.com/profile_images/1276651848674361346/Yct7zt3E_400x400.jpg"
-            alt="Image Title"
-          />
-        </a>
-        <div class="postcard__text">
-          <h1 class="postcard__title yellow">
-            <a href="#">Streaming Schedule for the Week</a>
-          </h1>
-          <div class="postcard__subtitle small">
-            <time datetime="2020-05-25 12:00:00">
-              <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
-            </time>
-          </div>
-          <div class="postcard__bar"></div>
-          <div class="postcard__preview-txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            fugiat asperiores inventore beatae accusamus odit minima enim,
-            commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
-            corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
-            adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
-            nobis enim quidem excepturi, illum quos!
-          </div>
-          <ul class="postcard__tagbox">
-            <li class="tag__item"><i class="fas fa-tag mr-2"></i> Streams</li>
-            <li class="tag__item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-headset"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"
-                />
-              </svg>
-              nubsh0tACTUAL
-            </li>
-            <li class="tag__item play yellow">
-              <a href="#"><i class="fas fa-play mr-2"></i> Visit Stream</a>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </div>
-
-    <div class="container contact">
-      <div class="row">
-        <form class="col-12 col-lg-6 col-xlg-7">
-          <h2>Reach out to us</h2>
-
-          <label for="name">Name</label>
-          <input name="name" id="name" type="text" />
-
-          <label for="email">Email</label>
-          <input
-            name="email"
-            id="email"
-            type="text"
-            placeholder="name@email.com"
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="meassage"
-            cols="30"
-            rows="10"
-            placeholder="What would like us to know?"
-          ></textarea>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <svg viewBox="0 0 16 16">
+          <path
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form>
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitch" viewBox="0 0 16 16">
+            <path
+              d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+          </svg>
+          <svg viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+          <svg viewBox="0 0 16 16">
+            <path
+              d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+            <path
+              d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+          </svg>
         </form>
+      </div>
+    </div>
+  </nav>
 
+  <div class="container landing-page">
+    <div class="row landing m">
+      <div class="col-12 col-lg-6 col-xlg-3">
         <img src="./Assets/whiteLogo.png" alt="logo" class="center-block" />
       </div>
+
+      <div class="text col-12 col-lg-6 col-xlg-7">
+        <h2>A GROUP OF PEOPLE DOIN' STUFF</h2>
+        <p>Smaller text for something else</p>
+      </div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  </body>
+  </div>
+
+  <div class="about container">
+    <article class="postcard blue">
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img"
+          src="https://static.wixstatic.com/media/df6e57_d537626eb9ef4a6b9b9748ad3a203842~mv2.png/v1/fit/w_2500,h_1330,al_c/df6e57_d537626eb9ef4a6b9b9748ad3a203842~mv2.png"
+          alt="Image Title" />
+      </a>
+      <div class="postcard__text">
+        <h1 class="postcard__title blue">
+          <a href="#">Helping Hands</a>
+        </h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          fugiat asperiores inventore beatae accusamus odit minima enim,
+          commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
+          corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
+          adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
+          nobis enim quidem excepturi, illum quos!
+        </div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i> Charity</li>
+          <li class="tag__item">
+            <i class="fas fa-clock mr-2"></i> 2 Weeks Left
+          </li>
+          <li class="tag__item play blue">
+            <a href="#"><i class="fas fa-play mr-2"></i> Visit Site</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="postcard red">
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img"
+          src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1172A54MPA3563PT17X21Y43D1012856824FS2800/views/1,width=378,height=378,appearanceId=54,backgroundColor=F2F2F2,modelId=2672,crop=list/you-cant-scare-me-crazy-new-jersey-girl-halloween-womens-vintage-sport-t-shirt.jpg"
+          alt="Image Title" />
+      </a>
+      <div class="postcard__text">
+        <h1 class="postcard__title red">
+          <a href="#">New Merch Dropped</a>
+        </h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          fugiat asperiores inventore beatae accusamus odit minima enim,
+          commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
+          corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
+          adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
+          nobis enim quidem excepturi, illum quos!
+        </div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i> Merch</li>
+          <!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i> </li> -->
+          <li class="tag__item play red">
+            <a href="#"><i class="fas fa-play mr-2"></i> Shop Now</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="postcard yellow">
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img" src="https://pbs.twimg.com/profile_images/1276651848674361346/Yct7zt3E_400x400.jpg"
+          alt="Image Title" />
+      </a>
+      <div class="postcard__text">
+        <h1 class="postcard__title yellow">
+          <a href="#">Streaming Schedule for the Week</a>
+        </h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>May, 19 2021
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          fugiat asperiores inventore beatae accusamus odit minima enim,
+          commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit
+          corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam
+          adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores
+          nobis enim quidem excepturi, illum quos!
+        </div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i> Streams</li>
+          <li class="tag__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+            </svg>
+            nubsh0tACTUAL
+          </li>
+          <li class="tag__item play yellow">
+            <a href="#"><i class="fas fa-play mr-2"></i> Visit Stream</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <div class="container contact">
+    <div class="row">
+      <form class="col-12 col-lg-6 col-xlg-7">
+        <h2>Reach out to us</h2>
+
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" />
+
+        <label for="email">Email</label>
+        <input name="email" id="email" type="text" placeholder="name@email.com" />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="meassage" cols="30" rows="10" placeholder="What would like us to know?"></textarea>
+      </form>
+
+      <img src="./Assets/whiteLogo.png" alt="logo" class="center-block" />
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
