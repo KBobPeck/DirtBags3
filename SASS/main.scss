@@ -1,6 +1,8 @@
 @import "nav";
 @import "landing";
 @import "vars";
+@import "about";
+@import "contact";
 
 /*! `Custom` Bootstrap 4 theme */
 
@@ -21,8 +23,14 @@ h6 {
   font-family: $headings-font-family;
 }
 
+body {
+  background: $theme1;
+}
+
 .shadow-border {
   background: $theme1;
-  box-shadow: $shadow;
+  box-shadow: $shadow1;
   border-radius: 1rem;
+  outline: none;
+  border: none;
 }

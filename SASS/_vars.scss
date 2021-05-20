@@ -4,7 +4,7 @@ $font-family-base: Poppins;
 @import url(https://fonts.googleapis.com/css?family=Fugaz+One:200,300,400,700);
 $headings-font-family: Fugaz One;
 
-$theme1: #12130f;
+$theme1: #1d212c;
 $theme2: #6f7f8c;
 
 $alt1: #66c7f4;
@@ -12,9 +12,14 @@ $alt1: #66c7f4;
 $highlight1: #e90f8e;
 $highlight2: #f90093;
 
-$dark1: #1e2b37;
+$dark1: #2c2c2c;
 
 $light1: #eceeec;
-$light2: #c1cad6;
+$light2: #3e4347;
 
-$shadow: 0.3rem 0.3rem 0.4rem $dark1, -0.2rem -0.2rem 0.3rem $light1;
+$boxShadowDark: #000000;
+$boxShadowLight: #ffffff;
+
+$shadow1: 0.1rem 0.1rem 0.3rem $boxShadowDark, -0.1rem -0.1rem 0.2rem $boxShadowLight;
+
+$shadow2: inset -0.05rem -0.05rem 0.1rem $boxShadowLight, inset 0.1rem 0.1rem 0.2rem $boxShadowDark;

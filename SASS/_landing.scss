@@ -1,5 +1,32 @@
 @import "vars";
 
-.landing{
-  height: 100vh;
+.landing {
+  @media (min-width: 992px) {
+    min-height: calc(80vh - 5rem);
+  }
+  min-height: calc(100vh - 5rem);
+
+  text-align: center;
+  color: $light1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 255, 255, 0.233), rgba(255, 0, 128, 0.185));
+  box-shadow: $shadow1;
+
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+  }
 }
